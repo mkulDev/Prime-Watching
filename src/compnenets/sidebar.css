@@ -1,0 +1,59 @@
+.side-bar {
+  position: fixed;
+  z-index: 2;
+  top: 92px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  margin: 0 auto;
+  gap: 10px;
+  border-top: 2px solid var(--redColor);
+  border-bottom: 2px solid var(--redColor);
+  background-color: var(--ModeColor1);
+  overflow-x: scroll;
+  transition: 0.5s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.side-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.category-button {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+  color: var(--redColor);
+  cursor: pointer;
+}
+
+.category-button svg {
+  font-size: 24px;
+  padding-right: 8px;
+}
+
+.category-button:hover {
+  background: linear-gradient(45deg, rgba(91, 0, 16, 1) 0%, rgba(191, 6, 6, 1) 100%);
+  color: hsl(0, 0%, 100%) !important ;
+  transition: 0.5s ease-in-out;
+}
+
+.category-button:hover > .cat-button-text {
+  color: hsl(0, 0%, 100%);
+}
+
+.cat-button-text {
+  font-size: 16px;
+  color: var(--ModeText);
+}
+
+@media only screen and (width >= 1024px) {
+  .side-bar {
+    justify-content: center;
+  }
+}

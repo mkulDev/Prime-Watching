@@ -1,0 +1,129 @@
+.video-detail-container {
+  margin-top: 152px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.video-detail {
+  padding-top: 20px;
+  width: 60%;
+  color: var(--ModeText);
+}
+
+.player-wrapper {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.video-detail-title {
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.9;
+  padding: 10px 0px 10px 0px;
+}
+
+.video-detail-channel-title {
+  opacity: 0.6;
+  color: var(--ModeText) !important;
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 18px;
+  padding-right: 20px;
+}
+
+.video-detail-description {
+  padding: 10px 0px;
+  opacity: 0.8;
+}
+
+.statistics {
+  padding-right: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.video-section {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 40%;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.related-card {
+  display: flex;
+  align-items: center;
+  color: var(--ModeText);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.related-card a img {
+  width: 200px;
+  aspect-ratio: 2/1;
+  border-radius: 10px;
+  background-color: grey;
+}
+
+.related-card img:hover {
+  opacity: 0.8;
+}
+.related-card-info {
+  opacity: 0.8;
+  padding: 15px;
+}
+
+@media only screen and (width <= 1024px) {
+  .video-detail-container {
+    margin-top: 152px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .video-section {
+    margin-top: 20px;
+    max-width: 90vw;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  .video-detail {
+    padding-top: 20px;
+    width: 100%;
+    color: var(--ModeText);
+  }
+
+  .related-card img {
+    width: 200px;
+    aspect-ratio: 2/1;
+  }
+
+  .related-card-info {
+    opacity: 0.8;
+    padding: 5px;
+  }
+
+  .related-card-info h4 {
+    font-size: 16px;
+  }
+
+  .related-card-info a {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (width <= 640px) {
+  .related-card-info h4 {
+    font-size: 12px;
+  }
+
+  .related-card-info a {
+    font-size: 10px;
+  }
+}

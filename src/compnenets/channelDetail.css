@@ -1,0 +1,48 @@
+.channelBar {
+  width: 100%;
+  background: linear-gradient(45deg, rgba(98, 0, 0, 1) 0%, rgba(195, 0, 0, 1) 100%);
+  height: 250px;
+  background-size: 100% auto;
+  background-position-y: center;
+}
+
+.channelBar img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  bottom: -150px;
+  left: 50%;
+  transform: translateX(-100px);
+}
+.channel-title {
+  margin-top: 100px;
+  color: var(--ModeText);
+  text-align: center;
+}
+
+.channel-title h4 {
+  font-size: 24px;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.channel-title h4 svg {
+  margin-left: 10px;
+}
+
+.channel-title p {
+  font-size: 16px;
+  opacity: 0.6;
+  font-weight: 500;
+}
+
+@media only screen and (width <= 640px) {
+  .channelBar {
+    height: 250px;
+    background-size: 100% 100%;
+    background-position-y: center;
+  }
+}
