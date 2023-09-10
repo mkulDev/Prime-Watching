@@ -1,20 +1,14 @@
-import React, {useState} from 'react'
-import {Link} from 'react-router-dom'
-import {HiCheckCircle} from 'react-icons/hi'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { HiCheckCircle } from 'react-icons/hi'
 
-const VideoCard = ({video}) => {
-  const {
-    id: {videoId},
-    snippet: {
-      title,
-      description,
-      channelTitle,
-      channelId,
-      thumbnails: {
-        medium: {url},
-      },
-    },
-  } = video
+const VideoCard = ({ video }) => {
+  const videoId = video?.id?.videoId || ''
+  const title = video?.snippet?.title || ''
+  const description = video?.snippet?.description || ''
+  const channelTitle = video?.snippet?.channelTitle || ''
+  const channelId = video?.snippet?.channelId || ''
+  const url = video?.snippet?.thumbnails?.medium?.url || ''
 
   const [thumbnailError, setThumbnailError] = useState(false)
 
@@ -24,7 +18,20 @@ const VideoCard = ({video}) => {
 
   return (
     <div className='card'>
-      <Link to={`video/${videoId}`}>{thumbnailError ? <img src='../images/prime-logo.svg' alt='default thumbnail' /> : <img src={url} alt='thumbnail' onError={handleThumbnailError} />}</Link>
+      <Link to={`video/${videoId}`}>
+        {thumbnailError ? (
+          <img
+            src='../images/prime-logo.svg'
+            alt='default thumbnail'
+          />
+        ) : (
+          <img
+            src={url}
+            alt='thumbnail'
+            onError={handleThumbnailError}
+          />
+        )}
+      </Link>
       <div className='card-info'>
         <h4>{title.slice(0, 40)}</h4>
         <Link to={`channel/${channelId}`}>
