@@ -25,13 +25,13 @@ Start the development server
 
 
 ## Technologies Used
-React
+- React
 
-React Router
+- React Router
 
-Axios (for API requests)
+- Axios (for API requests)
 
-CSS for styling
+- CSS for styling
 
 ## What I've Learned
 During the development of this project, I've learned and applied several key concepts and technologies:
