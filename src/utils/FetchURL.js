@@ -15,4 +15,4 @@ export const fetchAPI = async (url) => {
   return data
 }
 
-document.cookie = 'cookieName=cookieValue; SameSite=Lax'
+
