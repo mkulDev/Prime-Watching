@@ -26,8 +26,11 @@ Start the development server
 
 ## Technologies Used
 React
+
 React Router
+
 Axios (for API requests)
+
 CSS for styling
 
 ## What I've Learned
