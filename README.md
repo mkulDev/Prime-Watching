@@ -1,6 +1,6 @@
-## Prime Watchng
+## Prime Watching
 
-Prime Watching is a React web application that replicates the functionality of a video streaming platform. It allows users to browse videos, view video details, explore channels, and search for their favorite content. The app also features a dark mode for user customization.
+Prime Watching is a React web application that replicates the functionality of a video streaming platform. It allows users to browse videos, view video details, explore channels, and search for their favorite content. The app also features a dark mode for user customization.You can see live demo [here](https://prime-watching.netlify.app)
 
 <img src=/src/images/screen1.jpg width=600px/>
 <img src=/src/images/screen2.jpg width=600px/>
