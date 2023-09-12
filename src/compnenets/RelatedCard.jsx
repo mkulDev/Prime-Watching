@@ -16,22 +16,14 @@ const RelatedCard = ({ video }) => {
 
   return (
     <div className='related-card'>
-      (
       <Link to={`../video/${videoId}`}>
-        {thumbnailError ? (
-          <img
-            src={defaultImage}
-            alt='default thumbnail'
-          />
-        ) : (
-          <img
-            src={url}
-            alt='thumbnail'
-            onError={handleThumbnailError}
-          />
-        )}
+        <img
+          src={thumbnailError ? defaultImage : url}
+          alt='default thumbnail'
+          onError={handleThumbnailError}
+        />
       </Link>
-      )
+
       <div className='related-card-info'>
         <h4>{title?.slice(0, 40)}</h4>
         <Link to={`video/${videoId}`}>
